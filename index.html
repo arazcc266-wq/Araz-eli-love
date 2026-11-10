@@ -1,1 +1,172 @@
 
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+
+  <title>ARAZ ♡ ELI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="page active">
+      <div class="top-label">A SPECIAL PLACE FOR YOU ♡</div>
+
+      <div class="characters">
+        <span class="bear bear-one">🧸</span>
+        <span class="bear bear-two">🐻‍❄️</span>
+        <span class="floating-heart">♡</span>
+      </div>
+
+      <h1>ARAZ <span>♡</span> ELI</h1>
+
+      <p class="subtitle">
+        هەموو ئەم شوێنە بۆ تۆیە، Eli ـی من ❤️
+      </p>
+
+      <div class="welcome-card">
+        <p>
+          لە نێوان هەموو خەڵکی ئەم جیهانەدا،
+          دڵی من تەنها تۆی هەڵبژاردووە.
+          ئەمجارە شتێکی تایبەتم بۆت ئامادە کردووە...
+        </p>
+      </div>
+
+      <p class="date">27 / 11 / 2026</p>
+
+      <button onclick="startLove()">
+        دەست پێ بکەین ♡
+      </button>
+    </section>
+
+
+    <!-- Love Quiz -->
+    <section id="quiz" class="page">
+      <div class="top-label">01 — UNLOCK MY LOVE</div>
+
+      <h2>Unlock My Love ♡</h2>
+
+      <p>ئێلی خۆشەویستم، ئەم پرسیارانە بۆ تۆن...</p>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <div class="love-card">
+        <div class="card-top">
+          <span>♡</span>
+          <span>For My Eli</span>
+        </div>
+
+        <div class="characters small-characters">
+          🧸 💗 🐻‍❄️
+        </div>
+
+        <h3 id="question">پرسیاری یەکەم</h3>
+
+        <div id="answers" class="answers"></div>
+
+        <p id="feedback" class="feedback"></p>
+
+        <div class="card-bottom">
+          <span id="questionCount">1 / 3</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Love Letter -->
+    <section id="letter" class="page">
+      <div class="top-label">02 — MY LOVE LETTER</div>
+
+      <h2>My Love Letter 💌</h2>
+
+      <div class="love-card letter-card">
+        <div class="characters">
+          🧸 💗 🐻‍❄️
+        </div>
+
+        <h3>بۆ جوانترین کەسی ژیانم...</h3>
+
+        <div class="letter-text">
+          <p>
+            ئەگەر هەموو ژیانم جارێکی تر دەستم پێ بکەوێتەوە،
+            هەر جارێک تۆ هەڵدەبژێرم، Eli ـی من. ❤️
+          </p>
+
+          <p>
+            تۆ تەنها کەسێک نیت کە خۆشمدەوێت،
+            تۆ ئەو هۆکارەیت کە وای کردووە مانای
+            خۆشەویستی بە ڕاستی تێبگەم.
+          </p>
+
+          <p>
+            ناتوانم بەڵێن بدەم هەمیشە هەموو شتێک ئاسان بێت،
+            بەڵام بەڵێنت دەدەم دڵم هەمیشە بۆ تۆ بێت.
+          </p>
+
+          <p>
+            هەتا کۆتا هەناسەم، دڵم تەنها تۆ دەناسێت. ♾️
+          </p>
+        </div>
+
+        <p class="signature">بە خۆشەویستی، Araz ♡</p>
+      </div>
+    </section>
+
+
+    <!-- Future -->
+    <section id="future" class="page">
+      <div class="top-label">03 — A FUTURE WITH YOU</div>
+
+      <h2>A Future With You ♡</h2>
+
+      <p>ئێلی من، سێ نامەی نهێنیم بۆ تۆ هەیە...</p>
+
+      <div class="envelopes">
+        <button class="envelope" onclick="openSecret(1)">
+          💌 نامەی یەکەم
+        </button>
+
+        <button class="envelope" onclick="openSecret(2)">
+          💌 نامەی دووەم
+        </button>
+
+        <button class="envelope" onclick="openSecret(3)">
+          💌 نامەی سێیەم
+        </button>
+      </div>
+
+      <div id="secretMessage" class="message hidden"></div>
+
+      <div id="finalQuestion" class="hidden">
+        <h3>ئایا ئامادەیت هەموو داهاتووم لەگەڵ تۆ دروست بکەم؟ ❤️</h3>
+        <button onclick="finalYes()">بەڵێ، هەمیشە ♡</button>
+      </div>
+    </section>
+
+
+    <!-- Navigation -->
+    <nav id="navigation" class="navigation hidden">
+      <button onclick="previousPage()">→ پێشتر</button>
+      <span id="pageNumber">1 / 3</span>
+      <button onclick="nextPage()">دواتر ←</button>
+    </nav>
+
+    <footer>
+      Made with love by Araz, for Eli ♡
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
